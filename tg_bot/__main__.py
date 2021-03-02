@@ -18,8 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-ഞാൻ ഒരു ഗ്രൂപ്പ് മാനേജർ ബോട്ട് ആണ് പക്ഷെ വെറുതെ സമയം കളയണ്ട എന്നെ TAMILROCKERS  ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ.
-"""
+Admin Bot Vip Movies Tamil official Group"""
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
@@ -138,9 +137,9 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Group", url="https://t.me/tamilrokers_group"),  InlineKeyboardButton(text="Channel", url="https://t.me/joinchat/xpjbcoJDay80ODdk")]]))
+                    [[InlineKeyboardButton(text="Group", url="https://t.me/joinchat/T4oAksI-QBgav2_y"),  InlineKeyboardButton(text="Channel", url="https://t.me/joinchat/RJx5hrtzGesdGq7b")]]))
     else:
-        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
+        update.effective_message.reply_text("You are not allowed to see this Message...")
 
 
 # for test purposes
@@ -369,7 +368,7 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1586371992 and DONATION_LINK:
             update.effective_message.reply_text("You can also donate to the person currently running me "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
